@@ -1,0 +1,65 @@
+// reset style ul, li 
+%list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// paddings on each section
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+//  wrapper-container
+%container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+%logo {
+    font-family: 'Raleway',
+    sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+// buttons main styles
+%button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: hidden;
+    color: $main-background;
+    background-color: $color-accent;
+    cursor: pointer;
+}
+// font for title 
+%font-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin: 0 0 50px;
+    padding: 0;
+    text-align: center;
+}
+// socials-link
+%socials-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+%socials-icons__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
