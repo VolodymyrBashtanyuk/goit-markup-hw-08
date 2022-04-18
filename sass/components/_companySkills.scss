@@ -1,45 +1,45 @@
 // умение компании 
-.skills {
-    @extend %section;
-}
-.skills__wrapper {
-    @extend %container;
-}
-.skills__list {
-    @extend %list;
-    display: flex;
-}
-.skills__items {
-    width: 270px;
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
-}
-.skills__icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    background-color: $sub-backgrount;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-.skills__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
-}
+// .skills {
+//     @extend %section;
+// }
+// .skills__wrapper {
+//     @extend %container;
+// }
+// .skills__list {
+//     @extend %list;
+//     display: flex;
+// }
+// .skills__items {
+//     width: 270px;
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+// .skills__icons {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 270px;
+//     height: 120px;
+//     background-color: $sub-backgrount;
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+// }
+// .skills__title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     margin: 0;
+//     margin-bottom: 10px;
+//     padding: 0;
+// }
 
-.skills__text {
-    color: $icon-sub-text;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    margin: 0;
-    padding: 0;
-}
+// .skills__text {
+//     color: $icon-sub-text;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     margin: 0;
+//     padding: 0;
+// }

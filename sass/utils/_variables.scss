@@ -9,3 +9,5 @@ $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 $main-color: #212121;
 $main-font: 'Roboto', sans-serif;
 $letter-spacing: 0.03em;
+$transition-color: color 250ms $timing-function;
+$transition-background: background-color 250ms $timing-function;
