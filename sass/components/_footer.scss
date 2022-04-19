@@ -1,12 +1,131 @@
-// .footer {
-//     background-color: $footer-hero-background;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     border: 1px solid #000000;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+.footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    border: 1px solid #000000;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-hero-background;
+}
+.footer__wrapper {
+    @extend %container;
+}
+.footer__logo {
+    @extend %logo;
+    display: block;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: $main-background;
+    margin-bottom: 20px;
+}
+.footer__text {
+    color: $color-accent;
+}
+.footer__addresses {
+    text-decoration: none;
+    color: $main-background;
+    font-style: inherit;
+    margin-bottom: 60px;
+}
+.footer__list {
+    @extend %list;
+}
+.footer__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+.footer__link {
+    text-decoration: none;
+    color: $main-background;
+    font-style: inherit;
+    &--color {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+// footet social
+.footer__social {
+    margin-bottom: 60px;
+}
+.footer-social__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $main-background;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.footer-socials__items {
+    @extend %socials-icons;
+    @extend %list
+}
+.footer-socials__list:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-socials__link {
+    @extend %socials-icons__link;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms $timing-function;
+    &:hover, &:focus {
+        color: #ffffff;
+        background-color: $color-accent;
+    }
+}
+.footer-socials__icon {
+    fill: $main-background;
+}
+
+//field in footer 
+
+.footer-form__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $main-background;
+}
+
+.footer-form__field {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $main-background;
+    background-color: transparent;
+    outline: transparent;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+}
+.footer-form__button {
+    @extend %button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    transition: background-color 250ms $timing-function;
+    &:hover, &:focus {
+            background-color: $color-button-hover;
+    }
+}
+.button__icon {
+    margin-left: 10px;
+    fill: $main-background;
+}
+
+
+
+
+
 // .footer__wrapper {
 //     @extend %container;
 //     display: flex;

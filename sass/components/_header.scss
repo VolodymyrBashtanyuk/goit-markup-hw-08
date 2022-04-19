@@ -1,9 +1,19 @@
+.header {
+    @media screen and (min-width: 768px) {
+        border-bottom: 1px solid #ECECEC;;
+    }
+}
 .main-navigation__container {
+    @extend %container;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @extend %container;
+
+    // @media screen and (max-width: 767px) {
+    //     justify-content: space-between;
+    // }
+    
 
     & .main-navigation__menu-button {
         @media screen and (min-width: 768px) {
@@ -68,6 +78,7 @@
        }   
     }
 }
+
 .menu {
     @extend %list;
     @media screen and (max-width: 767px) {
@@ -77,7 +88,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
-      margin-right: 84px;
+      margin-left: 88px;
     }
 }
 .menu__item {
@@ -92,6 +103,7 @@
     }
 }
 .menu__link {
+    position: relative;
     display: block;
     font-weight: 500;
     font-size: 40px;
@@ -103,8 +115,17 @@
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.14;
+        &.current::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            bottom: -22px;
+            left: 0;
+            background: #2196f3;
+            border-radius: 2px;
+        }
     }
-
     &.current {
         color: $color-accent;
     }
@@ -122,17 +143,34 @@
     margin-bottom: 64px;
     padding-left: 40px;
     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
         margin-bottom: 0;
         padding-left: 0;
     }
 }
 .contacts__item {
-    &:not(:last-child) {
-        margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+    }
     }
     @media screen and (min-width: 768px) {
-        &:not(:last-child) {
+        &:last-child {
             margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &:last-child {
+            margin-right: 30px;
+            margin-bottom: 0;
         }
     }
 
@@ -145,8 +183,6 @@
     text-decoration: none;
     letter-spacing: 0.02em;
     color: $icon-sub-text;
-    
-
     &--style {
         font-weight: 500;
         font-size: 34px;
@@ -159,6 +195,13 @@
         font-size: 14px;
         line-height: 1.14;
         color: $icon-sub-text;
+            &:hover,
+            &:focus {
+                color: $color-accent;
+            }
+            & {
+                transition: $transition-color;
+            }
     }
 }
 .contacts__icon {

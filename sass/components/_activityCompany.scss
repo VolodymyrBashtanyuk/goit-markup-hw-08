@@ -1,3 +1,14 @@
+.images {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+     @extend %section;
+     padding-top: 0;
+    }
+
+
+
+
 // .images {
 //     @extend %section;
 //     padding-top: 0;
