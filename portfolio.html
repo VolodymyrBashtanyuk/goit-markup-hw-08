@@ -16,40 +16,55 @@
 
     <!-- Шапка  -->
     <header class="header">
-
-        <div class="container main-navigation__container">
-            <nav class="main-navigation">
-                <a class="logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
-
-                <ul class="menu list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="./index.html">Студия</a>
+    
+        <div class="main-navigation__container">
+            <a class="logo" href="./index.html"><span class="logo__text">Web</span>Studio</a>
+            <button class="main-navigation__menu-button is-open" type="button" data-menu-data
+                aria-controls="main-navigation__wrapper" aria-expanded="false">
+                <svg class="" aria-label="переключатель мобильного меню" width="32" height="32">
+                    <use class="main-navigation__icon-menu" href="./images/icons.svg#menu-mob"></use>
+                    <use class="main-navigation__icon-close" href="./images/icons.svg#close-mob"></use>
+                </svg>
+            </button>
+            <div class="main-navigation__wrapper is-open" id="main-navigation__wrapper" data-menu>
+                <nav class="main-navigation">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link " href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--style" href="tel:+380961111111">
+                            <svg class="contacts__icon" width="10" height="16">
+                                <use href="./images/icons.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link " href="">Контакты</a>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./images/icons.svg#envelope"></use>
+                            </svg>info@devstudio.com</a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contacts list">
-                <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts__icon" width="16" height="12">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
-            </ul>
+                <ul class="main-navigation__mobile-list">
+                    <li class="main-navigation__mobile-item"><a class="main-navigation__mobile-lihk">Instagram</a></li>
+                    <li class="main-navigation__mobile-item"><a class="main-navigation__mobile-lihk">Twitter</a></li>
+                    <li class="main-navigation__mobile-item"><a class="main-navigation__mobile-lihk">Facebook</a></li>
+                    <li class="main-navigation__mobile-item"><a class="main-navigation__mobile-lihk">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
-
+    
     </header>
+
 
     <!-- Основное наполнение portfolio -->
     <main>

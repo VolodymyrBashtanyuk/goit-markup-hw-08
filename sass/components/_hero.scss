@@ -14,7 +14,7 @@
     @extend %container;
 }
 .hero__title {
-    width: 100%;
+    width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
@@ -22,13 +22,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $main-background;
-    padding-left: 45px;
-    padding-right: 45px;
     margin: 0 auto 30px;
-    @media screen and (min-width: 768px) {
-        padding-left: 189px;
-        padding-right: 189px;
-    }
 }
 .button {
     @extend %button;
