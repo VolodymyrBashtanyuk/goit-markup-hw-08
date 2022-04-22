@@ -20,7 +20,6 @@
 .client__list {
     margin-right: 30px;
 @media screen and (max-width: 767px) {
-    // margin-right: 30px;
     margin-bottom: 10px;
 
     &:nth-of-type(2n) {
@@ -32,7 +31,6 @@
     }
 }
 @media screen and (min-width: 768px) {
-    // margin-right: 30px;
     margin-bottom: 30px;
     &:nth-of-type(3n) {
         margin-right: 0;
@@ -68,18 +66,11 @@
     @media screen and (min-width: 480px) {
        width: 210px;
     }
-    // from 719 to 768
-    @media screen and (min-width: 719px) {
-        width: 230px;
-    }
     // tablet
     @media screen and (min-width: 768px) {
         width: 226px;
     }
-    // from 1020 to 1200
-    @media screen and (min-width: 1020px) {
-        width: 300px;
-    }
+
     @media screen and (min-width: 1200px) {
         width: 170px;
     }
@@ -88,35 +79,3 @@
     fill: currentColor;
     transition: color 250ms $timing-function;
 }
-
-
-
-
-
-
-
-
-
-// .client__list:not(:last-child) {
-//     margin-right: 30px;
-// }
-// .client__link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: $color-social-link;
-//     border: 1px solid $color-social-link;
-//     border-radius: 4px;
-//     width: 170px;
-//     height: 92px;
-//     transition: border 250ms $timing-function;
-//     &:hover,
-//     &:focus {
-//         color: $color-accent;
-//         border: 1px solid $color-accent;
-//     }
-// }
-// .client__icon {
-//     fill: currentColor;
-//     transition: color 250ms $timing-function;
-// }
