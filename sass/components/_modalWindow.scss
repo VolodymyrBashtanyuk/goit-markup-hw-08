@@ -9,7 +9,7 @@
     visibility: visible;
     transition: opacity 250ms $timing-function, visibility 250ms $timing-function,
         transform 250ms $timing-function;
-    z-index: 10;
+    z-index: 20;
     &.is-hidden {
         opacity: 0;
         pointer-events: none;
@@ -42,9 +42,8 @@
 }
 .backdrop__button {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    border: 0;
+    top: 4px;
+    right: 4px;
     padding: 0;
     width: 30px;
     height: 30px;
@@ -55,6 +54,10 @@
     &:hover, &:focus {
         color: $color-accent;
     }
+    @media screen and(min-width: 480px) {
+        top: 8px;
+        right: 8px;
+    }
 }
 .backdrop__icon {
     fill: currentColor;
@@ -64,11 +67,12 @@
 //  наполнение формы 
 
 .form {
-    width: 100vw;
-    padding: 40px;
+    width: 90vw;
+    padding: 20px;
     @media screen and (min-width: 480px) {
         width:450px;
         height: 609px;
+        padding: 40px;
     }
     @media screen and (min-width: 1200px) {
         width: 528px;
@@ -143,6 +147,7 @@
     }
     @media screen and (min-width: 480px) {
         width: 370px;
+        // margin-bottom: 20px;
     }
     
     @media screen and (min-width: 1200px) {
@@ -153,19 +158,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.17;
-    color: var(--icon-sub-text);
-    margin-bottom: 30px;
-    @media screen and (min-width: 480px) {
-        font-size: 12px;
-        line-height: 1.17;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.71;
-    }
+    margin-bottom: 20px;
+    // font-weight: 400;
+    // font-size: 10px;
+    // line-height: 1.17;
+    // color: var(--icon-sub-text);
+    // margin-bottom: 30px;
+    // @media screen and (min-width: 480px) {
+    //     margin-bottom: 20px;;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     font-size: 14px;
+    //     line-height: 1.71;
+    // }
 }
 .checkbox__field {
     position: absolute;
@@ -183,14 +188,31 @@
     border: 1px solid #212121;
     border-radius: 4px;
     cursor: pointer;
-    margin-right: 7px;
+    margin-right: 8px;
     .checkbox__field:checked+& {
         border-color: $color-accent;
         background-color: $color-accent;
         background-image: url('../images/check.svg');
         background-size: contain;
         background-origin: border-box;
+        background-repeat: no-repeat;
     }
+}
+.checkbox__text {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+color: var(--icon-sub-text);
+margin: 0;
+
+@media screen and (min-width: 480px) {
+    display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+}
 }
 .button__form {
     @extend %button;
