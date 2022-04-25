@@ -124,15 +124,53 @@
                 <h2 class="images__title">Чем мы занимаемся</h2>
                 <ul class="images__list">
                     <li class="images__items">
-                        <img class="images__img" src="./images/programmig.jpg" alt="Программирование на компьютере" width="370" height="294">
+                       <picture>
+                        <source srcset="
+                            ./images/activity/programmig_lg.webp 1x,
+                            ./images/activity/programmig_lg@2x.webp 2x" 
+                            media="(min-width: 1200px)"
+                            type="image/webp" />
+                        <source srcset="
+                            ./images/activity/programmig_lg@2x.png 2x" 
+                            media="(min-width: 1200px)" 
+                            type="image/png" 
+                        />
+                        <img class="images__img" src="./images/activity/programmig_lg.png" alt="Программирование на компьютере" width="370" height="294">
+                       </picture>
                         <p class="images__text">Десктопные приложения</p>
                     </li>
                     <li class="images__items">
-                        <img class="images__img" src="./images/Mobile-Disign.jpg" alt="Адаптация сайта под телефон" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                ./images/activity/mobile-disign_lg.webp 1x,
+                                ./images/activity/mobile-disign_lg@2x.webp 2x" 
+                                media="(min-width: 1200px)"
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/activity/mobile-disign_lg@2x.png 2x" 
+                                media="(min-width: 1200px)" 
+                                type="image/png"
+                            />
+                            <img class="images__img" src="./images/activity/mobile-disign_lg.png" alt="Адаптация сайта под телефон" width="370" height="294">
+                        </picture>
                         <p class="images__text">Мобильные приложения</p>
                     </li>
                     <li class="images__items">
-                        <img class="images__img" src="./images/PC-Disign.jpg" alt="Палитра цветов на планшете" width="370" height="294">
+                        <picture>
+                            <source srcset="
+                                ./images/activity/pc-disign_lg.webp 1x,
+                                ./images/activity/pc-disign_lg@2x.webp 2x" 
+                                media="(min-width: 1200px)"
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/activity/pc-disign_lg@2x.png 2x" 
+                                media="(min-width: 1200px)"
+                                type="image/png" 
+                            />
+                            <img class="images__img" src="./images/activity/pc-disign_lg.png" alt="Палитра цветов на планшете" width="370" height="294">
+                        </picture>
                         <p class="images__text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -145,7 +183,48 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__items">
-                        <img class="team__img" src="./images/Product-Designer.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <picture>
+                            <!-- desktop -->
+                            <source srcset="
+                                ./images/team/product-designer_lg.webp 1x,
+                                ./images/team/product-designer_lg@2x.webp 2x" 
+                                media="(min-width: 1200px)"
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/product-designer_lg.jpg 1x,
+                                ./images/team/product-designer_lg@2x.jpg 2x" 
+                                media="(min-width: 1200px)"
+                                type="image/jpeg"
+                            />
+                            <!-- tablet -->
+                            <source srcset="
+                                ./images/team/product-designer_md.webp 1x,
+                                ./images/team/product-designer_md@2x.webp 2x" 
+                                media="(min-width: 768px)"
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/product-designer_md.jpg 1x,
+                                ./images/team/product-designer_md@2x.jpg 2x" 
+                                media="(min-width: 768px)" 
+                                type="image/jpeg" 
+                            />
+                            <!-- mobile -->
+                            <source 
+                            srcset="
+                            ./images/team/product-designer_sm.webp 1x,
+                            ./images/team/product-designer_sm@2x.webp 2x" 
+                            media="(max-width: 767px)" 
+                            type="image/webp" 
+                            />
+                            <source 
+                                srcset="./images/team/product-designer_sm@2x.jpg 2x"
+                                media="(max-width: 767px)" 
+                                type="image/jpeg"
+                            />
+                            <img class="team__img" src="./images/team/product-designer_sm.jpg" alt="Игорь Демьяненко" width="450" height="460">
+                        </picture>
                        <div class="team__content">
                             <h3 class="team__subtitle">Игорь Демьяненко</h3>
                             <p class="team__text" lang="en">Product Designer</p>
@@ -182,7 +261,47 @@
                        </div>
                     </li>
                     <li class="team__items">
-                        <img class="team__img" src="./images/Frontend-Developer.jpg" alt="Ольга Репина" width="270" height="260">
+                        <picture>
+                            <!-- desktop -->
+                            <source srcset="
+                                ./images/team/frontend-developer_lg.webp 1x,
+                                ./images/team/frontend-developer_lg@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source srcset="
+                                ./images/team/frontend-developer_lg.jpg 1x,
+                                ./images/team/frontend-developerr_lg@2x.jpg 2x"
+                                 media="(min-width: 1200px)"
+                                type="image/jpeg" 
+                                />
+                            <!-- tablet -->
+                            <source srcset="
+                                ./images/team/frontend-developer_md.webp 1x,
+                                ./images/team/frontend-developer_md@2x.webp 2x"
+                                 media="(min-width: 768px)"
+                                type="image/webp"
+                            />
+                            <source srcset="
+                                ./images/team/frontend-developer_md.jpg 1x,
+                                ./images/team/frontend-developer_md@2x.jpg 2x" 
+                                media="(min-width: 768px)"
+                                type="image/jpeg" 
+                            />
+                            <!-- mobile -->
+                            <source srcset="
+                                ./images/team/frontend-developer_sm.webp 1x,
+                                ./images/team/frontend-developer_sm@2x.webp 2x"
+                                media="(max-width: 767px)"
+                                type="image/webp" 
+                            />
+                            <source 
+                                srcset="./images/team/frontend-developer_sm@2x.jpg 2x" 
+                                media="(max-width: 767px)" 
+                                type="image/jpeg" 
+                            />
+                            <img class="team__img" src="./images/team/frontend-developer_sm.jpg" alt="Ольга Репина" width="450" height="460">
+                        </picture>
                         <div class="team__content">
                             <h3 class="team__subtitle">Ольга Репина</h3>
                             <p class="team__text" lang="en">Frontend Developer</p>
@@ -219,7 +338,47 @@
                         </div>
                     </li>
                     <li class="team__items">
-                        <img class="team__img" src="./images/Marketing.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <picture>
+                            <!-- desktop -->
+                            <source srcset="
+                                ./images/team/marketing_lg.webp 1x,
+                                ./images/team/marketing_lg@2x.webp 2x" 
+                                media="(min-width: 1200px)"
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/marketing_lg.jpg 1x,
+                                ./images/team/marketing_lg@2x.jpg 2x"
+                                 media="(min-width: 1200px)"
+                                type="image/jpeg" 
+                            />
+                            <!-- tablet -->
+                            <source srcset="
+                                ./images/team/marketing_md.webp 1x,
+                                ./images/team/marketing_md@2x.webp 2x" 
+                                media="(min-width: 768px)"
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/marketing_md.jpg 1x,
+                                ./images/team/marketing_md@2x.jpg 2x" 
+                                media="(min-width: 768px)"
+                                type="image/jpeg" 
+                            />
+                            <!-- mobile -->
+                            <source srcset="
+                                ./images/team/marketing_sm.webp 1x,
+                                ./images/team/marketing_sm@2x.webp 2x" 
+                                media="(max-width: 767px)"
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/marketing_sm@2x.jpg 2x" 
+                                media="(max-width: 767px)" 
+                                type="image/jpeg"
+                            />
+                            <img class="team__img" src="./images/team/marketing_sm.jpg" alt="Николай Тарасов" width="450" height="460">
+                        </picture>
                        <div class="team__content">
                             <h3 class="team__subtitle">Николай Тарасов</h3>
                             <p class="team__text" lang="en">Marketing</p>
@@ -256,7 +415,47 @@
                        </div>
                     </li>
                     <li class="team__items">
-                        <img class="team-img" src="./images/UI-Designer.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <picture>
+                            <!-- desktop -->
+                            <source srcset="
+                                ./images/team/ui-designer_lg.webp 1x,
+                                ./images/team/ui-designer_lg@2x.webp 2x" 
+                                media="(min-width: 1200px)" 
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/ui-designer_lg.jpg 1x,
+                                ./images/team/ui-designer_lg@2x.jpg 2x" 
+                                media="(min-width: 1200px)" 
+                                type="image/jpeg" 
+                            />
+                            <!-- tablet -->
+                            <source srcset="
+                                ./images/team/ui-designer_md.webp 1x,
+                                ./images/team/ui-designer_md@2x.webp 2x" 
+                                media="(min-width: 768px)" 
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/ui-designer_md.jpg 1x,
+                                ./images/team/ui-designer_md@2x.jpg 2x" 
+                                media="(min-width: 768px)" 
+                                type="image/jpeg" 
+                            />
+                            <!-- mobile -->
+                            <source srcset="
+                                ./images/team/ui-designer_sm.webp 1x,
+                                ./images/team/ui-designer_sm@2x.webp 2x" 
+                                media="(max-width: 767px)" 
+                                type="image/webp" 
+                            />
+                            <source srcset="
+                                ./images/team/ui-designer_sm@2x.jpg 2x" 
+                                media="(max-width: 767px)" 
+                                type="image/jpeg" 
+                            />
+                            <img class="team__img" src="./images/team/ui-designer_sm.jpg" alt="Михаил Ермаков" width="450" height="460">
+                        </picture>
                         <div class="team__content">
                             <h3 class="team__subtitle">Михаил Ермаков</h3>
                             <p class="team__text" lang="en">UI Designer</p>
