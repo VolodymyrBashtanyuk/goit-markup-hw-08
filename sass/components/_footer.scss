@@ -10,6 +10,9 @@
     @media screen and (max-width: 1199px) {
         text-align: center;
     }
+    @media screen and (min-width: 1200px) {
+        height: 252px;
+    }
 }
 .footer__wrapper {
     @extend %container;

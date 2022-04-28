@@ -52,7 +52,7 @@
 
 }
 .main-navigation__wrapper {
-    @extend %container;
+    // @extend %container;
     &.is-open {
         display: none;
     }
@@ -60,11 +60,12 @@
    
     @media screen and (max-width: 767px) {
         display: block; 
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0%;
         width: 100%;
-        height: 796px;
+        // height: 530px;
+        // height: 796px;
         background-color: $main-background;
         padding-top: 48px;
         z-index: 10;
@@ -80,13 +81,17 @@
 
 .menu {
     @extend %list;
-    @media screen and (max-width: 767px) {
+    margin-bottom: 130px;
+    margin-left: 25px;
+
+    @media screen and (min-width: 480px) {
         margin-bottom: 302px;
-        margin-left: 25px;
+        
     }
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
+      margin-bottom: 0;
       margin-left: 88px;
     }
 }
@@ -228,6 +233,7 @@
 .main-navigation__mobile-list {
     @extend %list;
     display: flex;
+    margin-bottom: 48px;
     margin-left: 25px;
 
     @media screen and (min-width: 767px) {
