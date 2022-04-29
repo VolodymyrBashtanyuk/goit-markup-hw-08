@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:479px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/hero-img/header_sm.jpg");
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/hero-img/header_sm.webp") 1x);
@@ -23,7 +23,7 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/hero-img/header_sm@2x.webp") 2x);
         }
     }
-    @media screen and (min-width:481px) and (max-width:768px) {
+    @media screen and (min-width:480px) and (max-width:767px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url("../images/hero-img/header_md.jpg");
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/hero-img/header_md.webp") 1x);
@@ -39,7 +39,7 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/hero-img/header_md@2x.webp") 2x);
         }
     }
-    @media screen and (min-width:769px) and (max-width:1600px) {
+    @media screen and (min-width:768px) and (max-width:1600px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url("../images/hero-img/header_lg.jpg");
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/hero-img/header_lg.webp") 1x);
@@ -63,7 +63,7 @@
     @extend %container;
 }
 .hero__title {
-    width: 300px;
+    width: 100%;
     font-weight: 900;
     font-size: 20px;
     line-height: 1.62;

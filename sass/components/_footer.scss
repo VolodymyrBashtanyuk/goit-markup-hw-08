@@ -7,25 +7,22 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $footer-hero-background;
+    @media screen and (min-width: 1199px) {
+        display: flex;;
+    }
     @media screen and (max-width: 1199px) {
         text-align: center;
-    }
-    @media screen and (min-width: 1200px) {
-        height: 252px;
     }
 }
 .footer__wrapper {
     @extend %container;
     @media screen and (min-width: 768px) {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: baseline;
     }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
     }
 }
 .footer__contacts {
@@ -56,7 +53,10 @@
     text-decoration: none;
     color: $main-background;
     font-style: inherit;
-    margin-bottom: 60px;
+    @media screen and (max-width:1199px) {
+        margin-bottom: 60px;
+    }
+    
 }
 .footer__list {
     @extend %list;
@@ -117,6 +117,7 @@
 
 //field in footer 
 
+
 .footer-form__text {
     font-weight: 700;
     line-height: 1.14;
@@ -135,23 +136,26 @@
 }
 .footer-form__field {
     width: 100%;
-    padding: 10px 15px;
+    padding: 16px 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: $main-background;
     background-color: transparent;
     outline: transparent;
-    @media screen and (max-width: 1199px) {
-        margin-bottom: 20px;
-    }
     @media screen and (min-width: 480px) {
         width: 450px;
     }
+    
     @media screen and (min-width: 1200px) {
         width: 358px;
         margin-right: 12px;
     }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+    
 }
 .footer-form__button {
     @extend %button;
