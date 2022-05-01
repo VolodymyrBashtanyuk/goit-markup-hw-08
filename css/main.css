@@ -715,6 +715,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__title {
   width: 100%;
   font-weight: 900;
